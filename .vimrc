@@ -4,13 +4,6 @@ set nocompatible
 " Helps force plugins to load correctly when it is turned back on below
 filetype off
 
-" Load plugins here
-call plug#begin()
-
-" Add your plugins here
-
-call plug#end()
-
 " Turn on syntax highlighting
 syntax on
 
