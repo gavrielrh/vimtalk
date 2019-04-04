@@ -16,8 +16,9 @@ let mapleader = ","
 " Security (don't allow auto execute)
 set modelines=0
 
-" Show relative line numbers
+" Show relative line numbers (and current number)
 set relativenumber
+set number
 
 " Show file stats
 set ruler
