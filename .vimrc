@@ -50,10 +50,6 @@ set scrolloff=3
 " Make backspace work everywhere
 set backspace=indent,eol,start
 
-" Add extra matching pairs to matchit
-set matchpairs+=<:> " use % to jump between pairs
-runtime! macros/matchit.vim
-
 " Move up/down editor lines (makes wraps less of a headache)
 nnoremap j gj
 nnoremap k gk
@@ -92,9 +88,3 @@ nnoremap - :Ex<CR>
 " disable automatic comment completion
 autocmd BufNewFile,BufRead,FileType,OptionSet * set formatoptions-=cro
 autocmd BufNewFile,BufRead,FileType,OptionSet * setlocal formatoptions-=cro
-
-" store temporary files (eg .swp) in a different directory
-set backupdir=~/.vim/backup//
-set directory=~/.vim/swap//
-set undodir=~/.vim/undo//
-
