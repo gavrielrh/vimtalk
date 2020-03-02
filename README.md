@@ -40,3 +40,38 @@ There are a number of default color schemes that come with vim, here are a few t
 To set a color scheme use `colo <yourscheme>`
 
 Ex: `colo slate`
+
+### Formatting
+To indent a line of code to the right, use `>>`
+
+To indent a line of code to the left, use `<<`
+
+To indent a block of code, visually select it (press `v` and then move until you have your selection) and then press `<` or `>`.
+
+vim has some built-in support for formatting text based on the filetype.
+
+The shortcut for this is `=`
+
+To format the entire document: `gg=G`
+
+### Ranges/Markers
+vim allows you to apply shortcuts to a range.
+
+This is done by prefixing the shortcut with the number representing your range (Ex: `4J`).
+
+The shortcut to mark a position as the start of a range is `m`, followed by the variable you wish to store this range in (Eg: `ma`).
+
+To apply a shortcut to a range using markers, postfix the command with `'` followed by the marker variable (Eg: `<'a`).
+
+### Macros
+vim allows you to record a sequence of keystrokes to be played back.
+
+This is done with the shortcut `q` followed by the variable you wish to store the macro in (Eg: `qa`).
+
+Once you've started recording, all following keystrokes will be recorded (including moving in and out of normal mode).
+
+When you are ready to complete your recording, hit `q` again.
+
+To replay a specific macro, use `@` followed by the variable you used when recording (Eg: `@a`)
+
+To replay the macro you just replayed, use `@@`
