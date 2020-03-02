@@ -7,6 +7,9 @@ filetype off
 " Turn on syntax highlighting
 syntax on
 
+" Use slate as the default color scheme
+colo slate
+
 " For plugins to load correctly
 filetype plugin indent on
 
